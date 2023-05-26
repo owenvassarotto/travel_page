@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card{
+    @apply w-52 h-64 shadow-lg rounded-lg flex-none transition-all hover:-translate-y-2 hover:cursor-pointer;
+}
+.card:nth-child(odd) {
+    @apply bg-secondary text-white dark:bg-gray-700;
+}
+.card:nth-child(even) {
+    @apply dark:bg-gray-800 dark:text-gray-300;
+}
